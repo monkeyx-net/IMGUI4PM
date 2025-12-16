@@ -417,7 +417,7 @@ int main(int argc, char *args[])
                         input.pop_back();
                     }
                     break;
-                /*case SDL_CONTROLLERBUTTONDOWN:
+                case SDL_CONTROLLERBUTTONDOWN:
                     switch (event.cbutton.button) {
                         case SDL_GameControllerButton::SDL_CONTROLLER_BUTTON_START:
                         //std::cerr << "Start pressed!" << std::endl;
@@ -428,8 +428,9 @@ int main(int argc, char *args[])
                         case SDL_GameControllerButton::SDL_CONTROLLER_BUTTON_DPAD_UP:
                         case SDL_GameControllerButton::SDL_CONTROLLER_BUTTON_DPAD_DOWN:
                             Mix_PlayChannel( -1, gHigh, 0 );
+                            std::cout << "Button pressed!" << event.cbutton.button << std::endl;
                             break;
-                    }*/
+                    }
                 break;
             }
 
